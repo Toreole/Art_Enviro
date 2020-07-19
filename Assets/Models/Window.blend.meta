@@ -27,6 +27,9 @@ ModelImporter:
     400020: Fence
     2100000: No Name
     2100002: Material.001
+    2100004: Arch
+    2100006: DoorFrame
+    2100008: Door
     2300000: Branches
     2300002: Frame
     2300004: Window_Pane
