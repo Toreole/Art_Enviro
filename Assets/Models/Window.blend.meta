@@ -14,6 +14,8 @@ ModelImporter:
     100016: Window
     100018: Cube
     100020: Fence
+    100022: Door_Frame.001
+    100024: WindowBars
     400000: Branches
     400002: Frame
     400004: //RootNode
@@ -25,6 +27,8 @@ ModelImporter:
     400016: Window
     400018: Cube
     400020: Fence
+    400022: Door_Frame.001
+    400024: WindowBars
     2100000: No Name
     2100002: Material.001
     2100004: Arch
@@ -38,6 +42,8 @@ ModelImporter:
     2300010: Door_Frame
     2300012: Door.001
     2300014: Cube
+    2300016: Door_Frame.001
+    2300018: WindowBars
     3300000: Branches
     3300002: Frame
     3300004: Window_Pane
@@ -46,6 +52,8 @@ ModelImporter:
     3300010: Door_Frame
     3300012: Door.001
     3300014: Cube
+    3300016: Door_Frame.001
+    3300018: WindowBars
     4300000: Frame
     4300002: Branches
     4300004: Window_Pane
@@ -54,6 +62,8 @@ ModelImporter:
     4300010: Door
     4300012: Door.001
     4300014: Cube
+    4300016: Door_Frame.001
+    4300018: WindowBars
   externalObjects: {}
   materials:
     importMaterials: 1
