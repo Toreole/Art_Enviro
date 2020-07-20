@@ -6,18 +6,24 @@ ModelImporter:
     100000: Floor
     100002: //RootNode
     100004: Walls
+    100006: ShadowBox
     400000: Floor
     400002: //RootNode
     400004: Walls
+    400006: ShadowBox
     2100000: Wall
+    2100002: No Name
     2300000: Floor
     2300002: Walls
     2300004: //RootNode
+    2300006: ShadowBox
     3300000: Floor
     3300002: Walls
     3300004: //RootNode
+    3300006: ShadowBox
     4300000: Walls
     4300002: Floor
+    4300004: ShadowBox
   externalObjects: {}
   materials:
     importMaterials: 1
