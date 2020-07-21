@@ -537,6 +537,7 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -590,7 +591,7 @@ Camera:
   m_HDR: 1
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
+  m_ForceIntoRT: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
@@ -608,6 +609,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 10.651001, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 534669905}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 2
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1001 &705992843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1119,7 +1180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.15
+      value: -7.69
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1127,23 +1188,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.3
+      value: -2.16
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.67093456
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7415166
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_RootOrder
@@ -1155,7 +1216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -84.27801
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1163,15 +1224,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.26699
+      value: 0.21561311
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.26699
+      value: 0.21561311
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.26699
+      value: 0.21561311
       objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: a403770b0eaea7f4cbb6a9b19c9bc40d, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1431,8 +1492,8 @@ Light:
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
+    m_Bias: 0.02
+    m_NormalBias: 0.21
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
