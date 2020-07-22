@@ -13,6 +13,7 @@ ModelImporter:
     400006: ShadowBox
     2100000: Wall
     2100002: No Name
+    2100004: Floor
     2300000: Floor
     2300002: Walls
     2300004: //RootNode
